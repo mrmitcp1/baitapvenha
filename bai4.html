@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num">
+<button onclick="btn()">check</button>
+<p id="text"></p>
+<script>
+    function btn() {
+        let arr = [1,2,3,4,63,8]
+        let num = +document.getElementById('num').value
+        console.log(arr.indexOf(num))
+        if (arr.indexOf(num)===-1){
+            alert('phan tu khong co hoac trung nhau')
+        }else document.getElementById('text').innerHTML=`gia tri ${num} o vi tri ${arr.indexOf(num)}`
+
+    }
+</script>
+</body>
+</html>
